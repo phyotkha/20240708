@@ -1,0 +1,9 @@
+Packages: 
+1. express 
+2. dotenv
+3. cookie-parser 
+4. bcryptjs - for hashing password
+5. mongoose - for database
+6. socket.io - for real-time communication
+7. jsonwebtoken - for creating token
+
