@@ -2,28 +2,28 @@ import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
     fullname: {
-        type: String, 
+        type: String,
         required: true
-    }, 
+    },
     username: {
-        type: String, 
-        required: true, 
+        type: String,
+        required: true,
         unique: true
-    }, 
+    },
     password: {
-        type: String, 
+        type: String,
         requried: true
-    }, 
+    },
     gender: {
-        type: String, 
-        required: true, 
+        type: String,
+        required: true,
         enum: ["male", "female"]
-    }, 
+    },
     profile_pic: {
-        type: String, 
+        type: String,
         default: ""
     }
-});
+}, { timestamps: true }); // createdAt, updateAt
 
 const User = mongoose.model("User", userSchema);
 
